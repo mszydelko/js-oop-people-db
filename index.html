@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>People App</title>
+
+    <style>
+        .container { width: 1080px; }
+        .container:first-of-type > input { width: 20%; display: block; margin-bottom: 10px;
+            padding: 5px; border-radius: 5px; border: 1px solid lightgrey; }
+        #addButton { padding: 10px 25px; border: none; background-color: grey; color: white; cursor: pointer; }
+        .container:nth-of-type(2) { margin-top: 50px;border-top: 1px solid lightgrey; padding-top: 30px; }
+        .people > div { display: inline-block;  width: 20%; text-align: center; font-weight: bold; padding-bottom: 30px;}
+        #records > div > div {display: inline-block; width: 20%; text-align: center;}
+    </style>
+</head>
+<body>
+<div class="container">
+    <input id="inputName" placeholder="Imię"/>
+    <input id="inputSurname" placeholder="Surname"/>
+    <input id="inputAge" placeholder="Age"/>
+    <input id="inputRole" placeholder="Role"/>
+    <button id="addButton">Dodaj</button>
+</div>
+
+<div class="container">
+    <div class="people">
+        <div class="people__name people__name--head">
+            Imię
+        </div>
+        <div class="people__surname people__surname--head">
+            Nazwisko
+        </div>
+        <div class="people__age people__age--head">
+            Wiek
+        </div>
+        <div class="people__role people__role--head">
+            Funkcja
+        </div>
+    </div>
+
+    <div id="records">
+
+    </div>
+
+</div>
+<script src="./script.js"></script>
+</body>
+</html>
